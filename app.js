@@ -11,8 +11,4 @@ app.controller('MyController', function($scope) {
     // We initialize the variable used for the ng-model="userName" input field.
     $scope.userName = 'Bro'; 
     
-    // You could also add functions here, like:
-    // $scope.clearName = function() {
-    //     $scope.userName = '';
-    // };
 });
