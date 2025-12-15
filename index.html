@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myMod">
+<head>
+  <meta charset="UTF-8" />
+  <title>AngularJS Test</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+  <script>
+    angular.module("myMod", []);
+  </script>
+
+  <script src="./module1.js"></script>
+</head>
+
+<body ng-controller="myController">
+
+  <h1>{{ name }}</h1>
+
+  <input ng-model="userName" placeholder="Enter your name" />
+  <p>Hello, {{ userName || 'Guest' }}</p>
+
+</body>
+</html>
