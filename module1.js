@@ -7,10 +7,12 @@ app.config(function ($routeProvider, $locationProvider) {
       templateUrl: 'templates/home.html',
       controller: 'HomeController'
     })
+
     .when('/user', {
       templateUrl: 'templates/user-form.html',
       controller: 'UserController'
     })
+    
     .otherwise({ redirectTo: '/home' });
 });
 app.controller('HomeController', function ($scope) {
