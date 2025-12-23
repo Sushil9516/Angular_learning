@@ -5,6 +5,8 @@ var app = angular.module("myApp", []);
 
 // 2. Define a Controller for the module.
 // This name ('MyController') MUST match the ng-controller="MyController" attribute in index.html.
+
 app.controller("MyController", function ($scope) {
+  
   $scope.userName = "Bro";
 });
