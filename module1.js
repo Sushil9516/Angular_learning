@@ -12,7 +12,6 @@ app.config(function ($routeProvider, $locationProvider) {
       templateUrl: 'templates/user-form.html',
       controller: 'UserController'
     })
-    
     .otherwise({ redirectTo: '/home' });
 });
 
