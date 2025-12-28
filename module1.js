@@ -3,10 +3,12 @@ var app = angular.module('myAppWithRoute', ['ngRoute']);
 app.config(function ($routeProvider, $locationProvider) {
   $locationProvider.hashPrefix('!');
   $routeProvider
+  
     .when('/home', {
       templateUrl: 'templates/home.html',
       controller: 'HomeController'
     })
+
     .when('/user', {
       templateUrl: 'templates/user-form.html',
       controller: 'UserController'
